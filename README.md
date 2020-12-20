@@ -4,8 +4,14 @@ This action allows to use [brrr](https://github.com/nyrst/brrr) as a GitHub acti
 
 ## Example usage
 
+Add a step to you workflow:
+
 ```yaml
-uses: uses: nyrst/brrr-action@master
-with:
-  args: info exa
+# Runs brrr action
+- name: Run brrr
+  uses: nyrst/brrr-action@main
+  with:
+    args: freezer generate
 ```
+
+See [freezer's workflow](https://github.com/nyrst/freezer/blob/main/.github/workflows/main.yml) for a detailed example.
