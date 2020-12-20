@@ -1,15 +1,8 @@
 name: 'brrr-action'
 description: 'Yet another package manager... As a GitHub action!'
-inputs:
-  command:  # id of input
-    description: 'Command to use'
-    required: true
-    default: 'help'
 runs:
   using: 'docker'
   image: 'docker://nyrst/brrr:latest'
-  args:
-    - ${{ inputs.command }}
 branding:
   icon: 'cloud-snow'  
   color: 'blue'
