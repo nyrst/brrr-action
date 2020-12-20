@@ -10,6 +10,8 @@ This action allows to use [brrr](https://github.com/nyrst/brrr) as a GitHub acti
 
 ## Example usage
 
+```yaml
 uses: uses: nyrst/brrr-action@master
 with:
   command: 'info exa'
+```
